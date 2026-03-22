@@ -4,21 +4,24 @@ import { ref, onMounted } from 'vue';
 const isVisible = ref(false);
 const sectionRef = ref(null);
 
-const message = `Hi inday, happy 6th monthsary nato. This time, dili na kaayo long message—simple ra ni, but I wanted to show effort in my own way. Since dili ko kaayo maayo mo-design, gihimo nalang nako ug website haha. Dili ni siya lingaw-lingaw lang; gusto lang gyud ko nga naa koy mabuhat para nimo, bisan ing-ani lang, hoping nga ma-appreciate gihapon nimo.
+const message = `Hi indaaay, happy 6th monthsary nato. 
 
-As time goes by, mas nagkakomportable ta sa usag-usa. We became more open, and along the way, naa gyud moments nga dili ta okay for some reasons. But despite everything, we still choose to stay, to fight, and to understand each other. Moangkon ko nga naa gyud koy mga sala—especially sa akong actions. I tend to overthink, and sometimes I make mistakes.
+Last nako long message sa Messenger to pag 3rd monthsary man siguro to nato. Karon, message gihapon pero website na hahaha.
 
-I want to say sorry for everything. I know kapoy na siguro ka makadungog nako sige ug sorry, but I would still apologize a million times because I never want to see you hurt or in pain because of me. I truly care about you.
+As time goes by, mas nagkakomportable nata, open, ug mas nailhan nato ang usag-usa. And along the way, dili gyud malikayan nga naa tay misunderstandings. Usahay dili ta okay, usahay lisod sabton ang sitwasyon. Pero bisan pa ana, we still choose each other. We stay, we fight, and we try to understand.
 
-Even if it sometimes seems like I don’t have plans, I actually do. I have plans not just for myself, but for us—our future together. I want us to succeed side by side. Karun, wala pa gyud ko sa akong goal—wala pay stable work, wala pay enough money, dili pa nato mapalit atong mga cravings haha—but I promise I’m doing my best and I will keep working hard for us.
+Kabalo ko naa koy mga apan hahaha, especially sa akong actions. I tend to overthink, seloso ra kaayo bisag way angay hahaha, tas masayop jud ko—feel nako okay ra pero dili na diay to maayo. And for that, I’m truly sorry. Kabalo ko kapoy na siguro ka makadungog nako sige ug sorry, pero I will never get tired of saying it if it means acknowledging my mistakes and trying to be better for you.
 
-Thank you, inday, for staying—even during the times when I become difficult to handle and when everything feels overwhelming. I’m truly grateful and lucky to have you in my life. Thank you for always supporting me, for being such a loving and understanding girlfriend—my girl, my only love. Thank you for taking care of me and for always making me feel genuinely loved and appreciated.
+Tas isa sa akong wish para nato is that even when we fight or have misunderstandings, we learn to be more vocal with each other. Bisan dili ta anad, bisan lisod usahay i-express atong feelings, I hope we both try. Kay mas maayos gyud ang tanan kung magstorya ta, kung mag-open ta sa unsay naa sa atong hunahuna, kaysa maghilom ug magtag-anay.
 
-One day, makabawi ra gyud ko nimo. Antos lang sa ta karon, and we’ll keep pushing forward until we reach our dreams—together.
+Nya even if sometimes murag wala koy plano hahaha, pero naa gyud. I have plans not just for myself, but for us—for our future. Karun, wala pa ko didto sa akong goal: wala pay stable work, wala pay enough money, dili pa nato mapalit atong mga cravings usahay. Mapalit man hinuon, pero taga adlaw man gud ga-crave hahaha. But I promise I’m doing my best. I will keep working hard if mapaboran na, not just for me, but for us.
 
-I love you, always. ❤️
+Tas thank you, inday, for staying. For loving me even when I’m hard to handle. For being patient, understanding, and for always choosing me. I’m really grateful and lucky to have you. Thank you for taking care of me and for making me feel loved in ways I never expected.
+
+One day, makabawi ra gyud ko nimo. Padayon lang hangtod maabot nato atong mga pangandoy puhon. Don’t forget to pray and to thank God always.
+
+I loooooveee yooouuu!
 `;
-
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {

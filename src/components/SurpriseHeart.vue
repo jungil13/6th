@@ -5,7 +5,7 @@ import chopperImg from '../assets/surprises/chopper.png';
 const showSurprise = ref(false);
 const audioRef = ref(null);
 
-const chopperGif = 'https://media.tenor.com/Yh38wS_Z-OIAAAAM/tony-tony-chopper-one-piece.gif';
+const chopperGif = 'https://media.giphy.com/media/vA47G53S5LixO/giphy.gif';
 
 const toggleSurprise = () => {
   showSurprise.value = !showSurprise.value;
