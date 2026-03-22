@@ -60,13 +60,17 @@ const emit = defineEmits(['open-heart']);
       </p>
 
       <div class="pt-12">
-        <button
-          @click="$emit('open-heart')"
-          class="px-12 py-5 bg-white border border-tan-100 text-tan-400 rounded-full font-serif text-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 ease-out active:scale-95 group overflow-hidden relative"
-        >
-          <span class="relative z-10">Open My Heart</span>
-          <div class="absolute inset-0 bg-tan-50 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-        </button>
+        <button 
+        @click="$emit('open-heart')"
+        class="group relative px-12 py-5 bg-brown-400 text-white rounded-full font-bold text-lg tracking-[0.2em] uppercase transition-all duration-500 hover:bg-brown-500 hover:scale-110 active:scale-95 shadow-2xl hover:shadow-brown-200/50 flex items-center gap-3 mx-auto overflow-hidden animate-shake"
+      >
+        <span class="relative z-10 italic text-black text-center">click here please!</span>
+        <svg class="w-6 h-6 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+        <!-- Glint effect -->
+        <div class="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[-20deg] -translate-x-full group-hover:animate-glint"></div>
+      </button>
       </div>
     </div>
 
@@ -89,8 +93,18 @@ const emit = defineEmits(['open-heart']);
   animation: float ease-in-out infinite;
 }
 
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px) rotate(-1deg); }
+  75% { transform: translateX(4px) rotate(1deg); }
+}
+
+.animate-shake {
+  animation: shake 0.5s infinite ease-in-out;
+}
+
 .slide-up {
-  animation: slideUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: slideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes slideUp {
