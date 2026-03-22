@@ -19,10 +19,13 @@ const moments = Object.keys(assetModules).map((path, index) => {
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      isVisible.value = true;
-    }
-  }, { threshold: 0.1 });
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        isVisible.value = true;
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0, rootMargin: '50px' });
 
   if (galleryRef.value) {
     observer.observe(galleryRef.value);
