@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-rose-50/20 text-slate-900;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
