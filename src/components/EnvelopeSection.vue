@@ -40,7 +40,7 @@ const openEnvelope = () => {
       >
         <div class="border border-brown-200 p-4 h-full flex flex-col items-center justify-center text-center space-y-4 bg-white/60 backdrop-blur-sm">
           <span class="text-[10px] uppercase tracking-[0.4em] text-brown-400 font-bold">Six Months</span>
-          <h3 class="text-xl md:text-2xl font-serif text-brown-500 italic">My Heart for You</h3>
+          <h3 class="text-xl md:text-2xl font-serif text-brown-500 italic">A Blossom for You</h3>
           <div class="w-8 h-[1px] bg-rose-200"></div>
           <p class="text-sm md:text-base italic text-brown-400 font-cursive text-xl leading-snug">
             "I know things haven't been perfect, but you mean everything to me..."
@@ -79,9 +79,9 @@ const openEnvelope = () => {
           class="absolute top-[128px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300"
           :class="isOpen ? 'opacity-0' : 'opacity-100'"
         >
-           <div class="w-14 h-14 bg-rose-500 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform ring-4 ring-rose-200/50 animate-heart-pulse">
+           <div class="w-14 h-14 bg-rose-400 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform ring-4 ring-rose-100/50 animate-sakura-pulse">
              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-               <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.41,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.59,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+               <path d="M12,22C12,22 13,18 16,18C19,18 22,20 22,20C22,20 20,17 20,14C20,11 22,9 22,9C22,9 18.5,10 16,10C13.5,10 12,6 12,6C12,6 10.5,10 8,10C5.5,10 2,9 2,9C2,9 4,11 4,14C4,17 2,20 2,20C2,20 5,18 8,18C11,18 12,22 12,22Z" />
              </svg>
            </div>
         </div>
@@ -95,12 +95,12 @@ const openEnvelope = () => {
   perspective: 1000px;
 }
 
-@keyframes heart-pulse {
+@keyframes sakura-pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
-.animate-heart-pulse {
-  animation: heart-pulse 1.5s infinite ease-in-out;
+.animate-sakura-pulse {
+  animation: sakura-pulse 1.5s infinite ease-in-out;
 }
 </style>

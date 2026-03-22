@@ -8,6 +8,7 @@ import MusicPlayer from './components/MusicPlayer.vue';
 import DateCounter from './components/DateCounter.vue';
 import BouquetSection from './components/BouquetSection.vue';
 import SurpriseHeart from './components/SurpriseHeart.vue';
+import FloatingBackground from './components/FloatingBackground.vue';
 
 const showMessage = ref(false);
 const showEnvelope = ref(false);
@@ -44,6 +45,7 @@ const showFullMessage = () => {
 
 <template>
   <div class="min-h-screen bg-brown-50 transition-colors duration-1000 font-sans selection:bg-brown-200 selection:text-brown-900">
+    <FloatingBackground />
     <!-- Hero Section -->
     <HeroSection @open-heart="openHeart" />
 
